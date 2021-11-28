@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+img {
+    animation: slidein 2s ease-out;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+li {
+    font-size: 18pt;
+    line-height: 1.5;
+}
+
+
+ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 40px;
+}
+
+section {
+    font-size: 2rem;
+    padding: 20px 30% 20px 50px;
+}
+
+nav {
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    font-size: 1rem;
+}
+
+nav li:not(:first-child, .menu-right)::before {
+    content: "| ";
+}
+
+footer {
+    padding: 20px 50px;
+    text-align: right;
+}
+
+.join-arrow {
+    margin-right: 20px;
+}
+
+.join {
+    text-decoration-color: #551a8b;
+    text-underline-offset: 3px;
+}
+
+.dark-section {
+    background-color: #0e0f11;
+    color: #fff9;
+}
+
+.dark-section strong {
+    color: #fff;
+}
+
+.light-section {
+    color: #00000073;
+}
+
+.light-section strong {
+    color: #000;
+}
+
+.menu-right {
+    float: right;
+}
+
+.menu-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.fade {
+    animation: fadein 2s ease-out;
+    display: inline-block;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

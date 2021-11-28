@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-GB" prefix="og: https://ogp.me/ns#">
+    <head>
+        <title>Hexavalent</title>
+        <link href="/main.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="author" content="The Hexavalent Authors">
+        <meta name="description" content="Hexavalent is a private and secure
+        browser based on existing security research.">
+        <meta name="viewport" content="width=device-width, minimum-scale=1,
+        initial-scale=1">
+        <meta property="og:description" content="Hexavalent is a private and
+        secure browser based on existing security research.">
+        <meta property="og:title" content="Hexavalent">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://hexavalent.org">
+    </head>
+    <body>
+        <nav>
+            <menu>
+                <li>
+                    <a class="menu-link" href="/">
+                        <strong>Hexavalent</strong>
+                    </a>
+                </li>
+                <li>About</li>
+                <li>Patches</li>
+                <li class="menu-right">
+                    <a class="menu-link" 
+                    href="https://github.com/Hexavalent-Browser">GitHub</a>
+                </li>
+            </menu>
+        </nav>
+        <section class="dark-section">
+            <p>
+                <strong>
+                    Welcome to <span class="fade">Hexavalent.</span>
+                </strong>
+                Hexavalent is a private and secure browser based on existing
+                security research. We're focused on hardening Chromium with a
+                series of patches, some of which come directly from other
+                security-oriented projects.
+            </p>
+            <p>
+                <span class="join-arrow">➔</span>
+                <a class="join" 
+                    href="https://github.com/Hexavalent-Browser/Hexavalent">
+                    <strong>Join us.</strong>
+                </a>
+            </p>
+        </section>
+        <section class="light-section">
+            <p>
+                <strong>Aimed at real people.</strong> We've invested in
+                defenses for real threat models and won't accept security
+                theatre. One of our objectives is to develop security while
+                providing a good user experience, with hardening that
+                <strong>doesn't get in the way.</strong>
+            </p>
+        </section>
+        <img alt="The Unsplash website as viewed on Hexavalent"
+        src="/unsplash.webp">
+        <section class="dark-section">
+            <p><strong>Features that work for you.</strong></p>
+            <ul>
+                <li>
+                    Site sandbox is strengthened by way of finer-grained
+                    origin isolation, improving on the current eTLD+1 isolation
+                    to mitigate real speculative execution exploits targeting
+                    sites that aren't sufficiently cross-origin isolated.
+                </li>
+                <li>
+                    More private WebRTC IP handling policy by default and
+                    provision of a toggle for users who may use a UDP-less proxy
+                    and accidentally expose their ISP public address.
+                </li>
+                <li>
+                    Development of a developer-facing toggle for easily
+                    disabling the creation of native code for JavaScript
+                    just-in-time, a W ⊕ X violation and a major source of
+                    vulnerabilities.
+                </li>
+                <li>
+                    Built with <code>-fstack-protector-strong</code> to expand
+                    stack canaries to more functions while maintaining low
+                    performance impact
+                </li>
+                <li>
+                    Various security improvements to PartitionAlloc to make it
+                    more resistant to heap corruption such as randomisation of
+                    freelist entries on allocation
+                </li>
+                <li>
+                    Initialisation of all variables with zero to mitigate
+                    vulnerabilities stemming from use of uninitialised memory
+                </li>
+                <li>
+                    Stubbing of the Battery Status API to counteract abuse of an
+                    API that has largely not been used for its intended purpose
+                </li>
+                <li>
+                    Revoking of sensors access by default to avoid giving sites
+                    unfettered access to sensitive info
+                </li>
+                <li>
+                    Building with <code>-fwrapv</code> by default to wrap
+                    otherwise undefined signed overflow
+                </li>
+                <li>
+                    Enabling of all current state partitioning features present
+                    upstream
+                </li>
+                <li>Making HTTPS-only mode the default</li>
+            </ul>
+        </section>
+        <footer>
+            Copyright © 2021, the Hexavalent Authors and contributors.
+        </footer>
+    </body>
+</html>

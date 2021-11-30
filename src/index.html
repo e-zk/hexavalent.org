@@ -2,9 +2,10 @@
 <html lang="en-GB" prefix="og: https://ogp.me/ns#">
     <head>
         <title>Hexavalent</title>
-        <link href="/main.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="author" content="The Hexavalent Authors">
+        <meta name="color-scheme" content="light dark">
         <meta name="description" content="Hexavalent is a private and secure
         browser based on existing security research.">
         <meta name="viewport" content="width=device-width, minimum-scale=1,
@@ -31,7 +32,7 @@
                 </li>
             </menu>
         </nav>
-        <section class="dark-section">
+        <section class="colored-section">
             <p>
                 <strong>
                     Welcome to <span class="fade">Hexavalent.</span>
@@ -49,7 +50,7 @@
                 </a>
             </p>
         </section>
-        <section class="light-section">
+        <section class="default-section">
             <p>
                 <strong>Aimed at real people.</strong> We've invested in
                 defenses for real threat models and won't accept security
@@ -59,13 +60,16 @@
             </p>
         </section>
         <picture>
-            <source srcset="unsplash.avif" type="image/avif">
-            <source srcset="unsplash.jxl" type="image/jxl">
-            <source srcset="unsplash.webp" type="image/webp"> 
+            <source srcset="unsplash-light.avif" type="image/avif"
+            media="(prefers-color-scheme: dark)">
+            <source srcset="unsplash-light.webp" type="image/webp"
+            media="(prefers-color-scheme: dark)">
+            <source srcset="unsplash-dark.avif" type="image/avif">
+            <source srcset="unsplash-dark.webp" type="image/webp"> 
             <img alt="The Unsplash website as viewed on Hexavalent"
-            src="unsplash.webp">
+            src="unsplash-dark.webp">
         </picture>
-        <section class="dark-section">
+        <section class="colored-section">
             <p><strong>Features that work for you.</strong></p>
             <ul>
                 <li>

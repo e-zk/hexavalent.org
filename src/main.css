@@ -71,20 +71,20 @@ footer {
     text-underline-offset: 3px;
 }
 
-.dark-section {
+.colored-section {
     background-color: #0e0f11;
     color: #fff9;
 }
 
-.dark-section strong {
+.colored-section strong {
     color: #fff;
 }
 
-.light-section {
+.default-section {
     color: #00000073;
 }
 
-.light-section strong {
+.default-section strong {
     color: #000;
 }
 
@@ -115,4 +115,37 @@ footer {
     to {
         transform: translateX(0);
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0e0f11;
+        color: #fff;
+    }
+
+    nav {
+        background-color: #000;
+    }
+
+    .colored-section {
+        background-color: #fff;
+        color: #00000073;
+    }
+    
+    .colored-section strong {
+        color: #000;
+    }
+
+    .default-section {
+        color: #fff9;
+    }
+    
+    .default-section strong {
+        color: #fff;
+    }
+
+    .menu-link {
+        color: #fff;
+    }
+
 }

@@ -164,4 +164,8 @@ footer {
         --body-padding: 30px;
     }
 
+    section {
+        padding-right: var(--body-padding);
+    }
+
 }

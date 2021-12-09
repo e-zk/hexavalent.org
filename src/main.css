@@ -45,6 +45,7 @@ section {
 }
 
 menu {
+    display: flex;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -62,7 +63,8 @@ nav li {
     font-size: 1rem;
 }
 
-nav li:not(:first-child, .menu-right)::before {
+nav li:not(:first-child)::before {
+    margin-left: 5px;
     content: "| ";
 }
 
@@ -95,10 +97,6 @@ footer {
 
 .default-section strong {
     color: #000;
-}
-
-.menu-right {
-    float: right;
 }
 
 .menu-link {

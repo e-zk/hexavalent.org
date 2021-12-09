@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root {
+    --body-padding: 50px;
+}
+
 body {
     background-color: #fff;
     color: #000;
@@ -37,13 +41,18 @@ ul {
 
 section {
     font-size: 2rem;
-    padding: 20px 30% 20px 50px;
+    padding: 20px 30% 20px var(--body-padding);
+}
+
+menu {
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 nav {
     background-color: #fff;
     font-size: 1rem;
-    padding: 20px 50px;
+    padding: 20px var(--body-padding);
     position: sticky;
     top: 0;
 }
@@ -58,7 +67,7 @@ nav li:not(:first-child, .menu-right)::before {
 }
 
 footer {
-    padding: 20px 50px;
+    padding: 20px var(--body-padding);
     text-align: right;
 }
 
@@ -146,6 +155,13 @@ footer {
 
     .menu-link {
         color: #fff;
+    }
+
+}
+
+@media (max-width: 400px) {
+    :root {
+        --body-padding: 30px;
     }
 
 }

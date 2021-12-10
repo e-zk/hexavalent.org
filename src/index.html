@@ -6,12 +6,14 @@
         <meta charset="utf-8">
         <meta name="author" content="The Hexavalent Authors">
         <meta name="color-scheme" content="light dark">
-        <meta name="description" content="Hexavalent is a private and secure
-        browser based on existing security research.">
-        <meta name="viewport" content="width=device-width, minimum-scale=1,
-        initial-scale=1">
-        <meta property="og:description" content="Hexavalent is a private and
-        secure browser based on existing security research.">
+        <meta name="description" 
+              content="Hexavalent is a private and secure browser based on
+                       existing security research.">
+        <meta name="viewport"
+              content="width=device-width, minimum-scale=1, initial-scale=1">
+        <meta property="og:description" 
+              content="Hexavalent is a private and secure browser based on
+                       existing security research.">
         <meta property="og:title" content="Hexavalent">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://hexavalent.org">
@@ -92,34 +94,36 @@
                 <li>
                     Built with <code>-fstack-protector-strong</code> to expand
                     stack canaries to more functions while maintaining low
-                    performance impact
+                    performance impact.
                 </li>
                 <li>
                     Various security improvements to PartitionAlloc to make it
                     more resistant to heap corruption such as randomisation of
-                    freelist entries on allocation
+                    freelist entries on allocation.
                 </li>
                 <li>
                     Initialisation of all variables with zero to mitigate
-                    vulnerabilities stemming from use of uninitialised memory
+                    vulnerabilities stemming from use of uninitialised memory.
                 </li>
                 <li>
                     Stubbing of the Battery Status API to counteract abuse of an
-                    API that has largely not been used for its intended purpose
+                    API that has largely not been used for its intended purpose.
                 </li>
                 <li>
                     Revoking of sensors access by default to avoid giving sites
-                    unfettered access to sensitive info
+                    unfettered access to sensitive info.
                 </li>
                 <li>
                     Building with <code>-fwrapv</code> by default to wrap
-                    otherwise undefined signed overflow
+                    otherwise undefined signed overflow.
                 </li>
                 <li>
                     Enabling of all current state partitioning features present
-                    upstream
+                    upstream.
                 </li>
-                <li>Making HTTPS-only mode the default</li>
+                <li>
+                    Making HTTPS-only mode the default.
+                </li>
             </ul>
         </section>
         <footer>

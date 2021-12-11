@@ -2,18 +2,13 @@
 <html lang="en-GB" prefix="og: https://ogp.me/ns#">
     <head>
         <title>Hexavalent</title>
-        <link href="main.css" rel="stylesheet">
+        <link href="/main.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="author" content="The Hexavalent Authors">
         <meta name="color-scheme" content="light dark">
-        <meta name="description" 
-              content="Hexavalent is a private and secure browser based on
-                       existing security research.">
-        <meta name="viewport"
-              content="width=device-width, minimum-scale=1, initial-scale=1">
-        <meta property="og:description" 
-              content="Hexavalent is a private and secure browser based on
-                       existing security research.">
+        <meta name="description" content="Hexavalent is a private and secure browser based on existing security research.">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+        <meta property="og:description" content="Hexavalent is a private and secure browser based on existing security research.">
         <meta property="og:title" content="Hexavalent">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://hexavalent.org">
@@ -26,11 +21,20 @@
                         <strong>Hexavalent</strong>
                     </a>
                 </li>
-                <li>About</li>
-                <li>Patches</li>
-                <li class="menu-right">
-                    <a class="menu-link"
-                        href="https://github.com/Hexavalent-Browser">GitHub</a>
+                <li>
+                    <a class="menu-link" href="https://docs.hexavalent.org">
+                        <strong>Docs</strong>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-link" href="https://github.com/Hexavalent-Browser">
+                        <strong>Source code</strong>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-link">
+                        <strong>Downloads (Coming soon!)</strong>
+                    </a>
                 </li>
             </menu>
         </nav>
@@ -61,16 +65,6 @@
                 <strong>doesn't get in the way.</strong>
             </p>
         </section>
-        <picture>
-            <source srcset="unsplash-light.avif" type="image/avif"
-                media="(prefers-color-scheme: dark)">
-            <source srcset="unsplash-light.webp" type="image/webp"
-                media="(prefers-color-scheme: dark)">
-            <source srcset="unsplash-dark.avif" type="image/avif">
-            <source srcset="unsplash-dark.webp" type="image/webp">
-            <img alt="The Unsplash website as viewed on Hexavalent"
-                src="unsplash-dark.webp">
-        </picture>
         <section class="colored-section">
             <p><strong>Features that work for you.</strong></p>
             <ul>
@@ -88,7 +82,7 @@
                 <li>
                     Development of a developer-facing toggle for easily
                     disabling the creation of native code for JavaScript
-                    just-in-time, a W ⊕ X violation and a major source of
+                    just-in-time, a W^X violation and a major source of
                     vulnerabilities.
                 </li>
                 <li>
@@ -127,7 +121,7 @@
             </ul>
         </section>
         <footer>
-            Copyright © 2021, the Hexavalent Authors and contributors.
+            Copyright © 2021, The Hexavalent Authors and contributors.
         </footer>
     </body>
 </html>

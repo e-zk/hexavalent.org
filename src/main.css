@@ -40,8 +40,12 @@ ul {
 }
 
 section {
-    font-size: 2rem;
-    padding: 20px 30% 20px var(--body-padding);
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+section ul {
+    column-count: 2;
 }
 
 menu {
@@ -104,6 +108,14 @@ footer {
     text-decoration: none;
 }
 
+.section-block {
+    padding: 20px var(--body-padding);
+}
+
+.section-right {
+    padding-right: 30%;
+}
+
 .fade {
     animation: fadein 2s ease-out;
     display: inline-block;
@@ -162,7 +174,7 @@ footer {
         --body-padding: 30px;
     }
 
-    section {
+    .section-right {
         padding-right: var(--body-padding);
     }
 

@@ -9,6 +9,7 @@
     --background-colored: #0e0f11;
     --background-default: #f7f7f7;
     --default-color: #000;
+    --head-foot-color: #fff;
     --head-foot-padding: 20px var(--body-padding);
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 nav {
-    background-color: #fff;
+    background-color: var(--head-foot-color);
     font-size: 1rem;
     padding: var(--head-foot-padding);
     position: sticky;
@@ -40,6 +41,7 @@ section {
 }
 
 footer {
+    background-color: var(--head-foot-color);
     padding: var(--head-foot-padding);
     text-align: right;
 }
@@ -161,36 +163,20 @@ section ul {
 /* Dark mode */
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #0e0f11;
-        color: #f7f7f7;
+    :root {
+        --background-colored: #0e0f11;
+        --background-default: #121212;
+        --default-color: #fff;
+        --head-foot-color: #000;
     }
 
     nav {
         background-color: #000;
     }
 
-    .colored-section {
-        background-color: #f7f7f7;
-        color: #00000073;
-    }
-    
-    .colored-section strong {
-        color: #000;
-    }
-
     .default-section {
         color: #fff9;
     }
-    
-    .default-section strong {
-        color: #f7f7f7;
-    }
-
-    .menu-link {
-        color: #f7f7f7;
-    }
-
 }
 
 /* Misc media */

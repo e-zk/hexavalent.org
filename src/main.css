@@ -65,11 +65,17 @@ nav {
 nav li {
     display: inline;
     font-size: 1rem;
+    font-weight: 600;
+}
+
+nav li:first-child {
+    font-weight: 750;
 }
 
 nav li:not(:first-child)::before {
     margin-left: 5px;
-    content: "| ";
+    content: "|";
+    font-weight: 750;
 }
 
 footer {

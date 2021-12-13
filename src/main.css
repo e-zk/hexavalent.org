@@ -6,13 +6,15 @@
 
 :root {
     --body-padding: 50px;
+    --background-colored: #0e0f11;
+    --background-default: #f7f7f7;
+    --default-color: #000;
 }
 
 body {
-    background-color: #f7f7f7;
-    color: #000;
+    background-color: var(--background-default);
+    color: var(--default-color);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-
 }
 
 p,
@@ -53,7 +55,7 @@ menu {
 }
 
 nav {
-    background-color: #f7f7f7;
+    background-color: var(--background-default);
     font-size: 1rem;
     padding: 20px var(--body-padding);
     position: sticky;
@@ -91,12 +93,12 @@ footer {
 }
 
 .colored-section {
-    background-color: #0e0f11;
+    background-color: var(--background-colored);
     color: #fff9;
 }
 
 .colored-section strong {
-    color: #f7f7f7;
+    color: #fff;
 }
 
 .default-section {
@@ -104,11 +106,11 @@ footer {
 }
 
 .default-section strong {
-    color: #000;
+    color: var(--default-color);
 }
 
 .menu-link {
-    color: #000;
+    color: var(--default-color);
     text-decoration: none;
 }
 

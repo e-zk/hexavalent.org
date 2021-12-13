@@ -15,9 +15,9 @@ body {
 
 }
 
-p {
-    margin-top: 1em;
-    margin-bottom: 1em;
+p,
+ul {
+    margin: 1em 0;
 }
 
 img {
@@ -34,8 +34,6 @@ li {
 
 
 ul {
-    margin-top: 1em;
-    margin-bottom: 1em;
     padding-left: 40px;
 }
 

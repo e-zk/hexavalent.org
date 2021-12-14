@@ -147,16 +147,19 @@ section ul {
 }
 
 .slide {
-    animation: slidein 2s ease-out;
+    animation: slidein 2s;
     position: relative;
+    z-index: -1;
 }
 
 @keyframes slidein {
     from {
-        transform: translateX(-50%);
+        opacity: .75;
+        transform: translateY(5%);
     }
     to {
-        transform: translateX(0);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -196,5 +199,9 @@ section ul {
 
     .section-right {
         padding-right: var(--body-padding);
+    }
+
+    #water {
+        padding: 0 10px 5px;
     }
 }
